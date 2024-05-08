@@ -29,7 +29,7 @@ const App = () => {
 
             <div className="search">
                 <input
-                    placeholder="Search for movies"
+                    placeholder="Babe, search for movies here"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     onKeyDown={(e) => {
