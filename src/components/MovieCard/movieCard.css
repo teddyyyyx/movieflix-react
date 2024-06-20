@@ -89,8 +89,8 @@
 
   @media screen and (max-width: 610px) {
     .movie{
-        width: 10rem;
-        height: 18rem;
+        width: 9rem;
+        height: 17rem;
       }
       .movie-title{
         padding: .5rem;
