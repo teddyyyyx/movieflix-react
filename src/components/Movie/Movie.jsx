@@ -7,7 +7,7 @@ export const Movie = () => {
     console.log(movies)
 
   return (
-        <div className='main-container'>         
+        <div className='main-container'>    
             <p className='show-result'>Showing results for: <span>{currentSearch}</span></p>
             {
                 movies?.length > 0
@@ -18,9 +18,9 @@ export const Movie = () => {
                         ))}
                     </div>
                 ) : (
-                    <div className="empty">
-                        <h2>No Movies Found</h2>
-                    </div>
+                    
+                        <h2 className='no-movies-found'>No Movies Found</h2>
+                
                 )
             }
         </div>

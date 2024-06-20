@@ -1,5 +1,6 @@
 .main-container{
   padding: 5rem 10%;
+  min-height: 90vh;
 
 }
 .movie-container {
@@ -21,9 +22,14 @@
   color: white;
 }
 
+.no-movies-found{
+  color: var(--text-color-theme);
+  text-align: center;
+  margin-top: -2rem;
+}
 @media screen and (max-width: 980px) {
   .main-container{
-    padding: 0 5%;
+    padding: 3rem 5%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -34,6 +40,6 @@
   }
 
   .show-result{
-    margin: 4rem 0 2rem;
+    margin-bottom: 2rem;
   }
 }
