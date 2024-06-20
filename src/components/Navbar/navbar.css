@@ -31,7 +31,7 @@
     /* color: var(--text-color-theme); */
     color: #bc65f6d0;
     text-decoration: none;
-    font-size: clamp(2.2rem, 3vw, 4rem);
+    font-size: clamp(2.5rem, 3vw, 4rem);
     font-family: 'Caveat', cursive;
 }
 

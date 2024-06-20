@@ -18,9 +18,7 @@ export const Movie = () => {
                         ))}
                     </div>
                 ) : (
-                    
                         <h2 className='no-movies-found'>No Movies Found</h2>
-                
                 )
             }
         </div>
