@@ -1,18 +1,20 @@
 import React, { useContext } from 'react'
-import { MovieContext } from '../../Context/MovieContext'
+import { MovieContext } from '../../context/MovieContext'
 import MovieCard from '../MovieCard/MovieCard';
 import './movie.css'
 export const Movie = () => {
-    const {movies} = useContext(MovieContext);
+    const {movies, currentSearch} = useContext(MovieContext);
+    console.log(movies)
 
   return (
-        <>           
+        <div className='main-container'>         
+            <p className='show-result'>Showing results for: <span>{currentSearch}</span></p>
             {
                 movies?.length > 0
                 ? (
                     <div className="movie-container">
                         {movies.map((movie) => (
-                            <MovieCard movie={movie}/>
+                                <MovieCard key={movie.imdbID} movie={movie}/>   
                         ))}
                     </div>
                 ) : (
@@ -21,6 +23,6 @@ export const Movie = () => {
                     </div>
                 )
             }
-        </>
+        </div>
   )
 }

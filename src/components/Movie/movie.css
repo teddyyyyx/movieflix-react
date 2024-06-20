@@ -1,6 +1,8 @@
+.main-container{
+  padding: 5rem 10%;
+
+}
 .movie-container {
-  margin-top: 10rem;
-  padding: 0 10%;
   display: flex;
   flex-wrap: wrap;
   gap: 4rem 2rem;
@@ -8,8 +10,30 @@
   align-items: center;
 }
 
-@media screen and (max-width: 600px) {
-  .movie-container{
+.show-result{
+  color: rgb(224, 216, 216);
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.show-result span{
+  color: white;
+}
+
+@media screen and (max-width: 980px) {
+  .main-container{
     padding: 0 5%;
+  }
+}
+@media screen and (max-width: 600px) {
+
+
+  .movie-container{
+    gap: 2rem 1rem;
+  }
+
+  .show-result{
+    margin: 4rem 0 2rem;
   }
 }
