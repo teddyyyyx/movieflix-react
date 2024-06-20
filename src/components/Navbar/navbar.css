@@ -1,7 +1,7 @@
 #navbar{
     width: 100%;
     height: 5.5rem;
-    background-color: #3f4153;
+    background-color: var(--sub-color-theme);
     display: flex;
     align-items: center;
     padding: 0 5%;
@@ -19,10 +19,11 @@
     right: 0;
     margin-right: 5%;
     gap: .8rem;
+    background-color: var(--sub-color-theme);
 }
 
 .navbar-right > svg{
-    width: 2.5rem;
+    width: clamp(2rem, 3vw, 2.5rem);
     cursor: pointer;
 }
 
@@ -46,7 +47,8 @@
     color: #742da3;
 }
 
-@media screen and (max-width: 999px) {
+
+@media screen and (max-width: 720px) {
     .navbar-ul{
         display: none;
     }
@@ -54,12 +56,15 @@
         gap: .4rem;
         position: block;
     }
+
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 500px) {
     .navbar-right > svg{
         display: none;
     }
-
     
+    #navbar{
+        height: 5rem;
+    }
 }
