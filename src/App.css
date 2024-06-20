@@ -11,6 +11,7 @@
 :root {
   --font-roboto: "Roboto Slab", serif;
   --font-raleway: "Raleway", sans-serif;
+  --sub-color-theme: #3f4153;
 }
 
 body {
@@ -40,16 +41,6 @@ body {
   font-family: var(--font-raleway);
 }
 
-.container {
-  width: 100%;
-  margin-top: 3rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 
 /* @media screen and (max-width: 700px) {
 
@@ -68,14 +59,3 @@ body {
     height: 20px;
   }
 } */
-
-@media screen and (max-width: 400px) {
-  .container {
-    margin-top: 2rem;
-  }
-
-  .movie {
-    width: "100%";
-    margin: 1rem;
-  }
-}
