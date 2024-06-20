@@ -28,7 +28,8 @@
 }
 
 .logo-name{
-    color: var(--text-color-theme);
+    /* color: var(--text-color-theme); */
+    color: #bc65f6d0;
     text-decoration: none;
     font-size: clamp(2rem, 3vw, 4rem);
     font-family: 'Caveat', cursive;
