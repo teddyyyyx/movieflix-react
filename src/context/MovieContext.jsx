@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom'
 
 export const MovieContext = createContext(null);
 const API_URL = 'https://www.omdbapi.com?apikey=bf9758c3';
