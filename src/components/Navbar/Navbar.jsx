@@ -15,6 +15,7 @@ export const Navbar = () => {
             <li><a href="">Film</a></li>
             <li><a href="">Corn</a></li>
             <li><a href="">Anime</a></li>
+            <li><a href="">Sepnu</a></li>
         </ul>
         
         <div className='navbar-right'>
