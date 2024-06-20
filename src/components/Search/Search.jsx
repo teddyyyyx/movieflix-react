@@ -1,5 +1,4 @@
 import React, {useContext} from 'react'
-import { useNavigate } from 'react-router-dom'
 import { MovieContext } from '../../context/MovieContext'
 import './search.css'
 export const Search = () => {
