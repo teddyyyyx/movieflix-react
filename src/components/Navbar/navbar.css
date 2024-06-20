@@ -29,6 +29,7 @@
 
 .logo-name{
     color: var(--text-color-theme);
+    text-decoration: none;
     font-size: clamp(1.5rem, 3vw, 3rem);
 }
 
