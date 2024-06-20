@@ -28,7 +28,7 @@
 }
 
 .logo-name{
-    color: #e2e2e2;
+    color: var(--text-color-theme);
     font-size: clamp(1.5rem, 3vw, 3rem);
 }
 
@@ -36,10 +36,10 @@
     display: flex;
     gap: 1rem;
 }
-.navbar-ul li, a{
+.navbar-ul li, .navbar-ul a{
     text-decoration: none;
     list-style-type: none;
-    color: #e2e2e2;
+    color: var(--text-color-theme);
     font-size: clamp(.8rem, 1.5vw, 1rem);
 }
 
@@ -48,7 +48,7 @@
 }
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 600px) {
     .navbar-ul{
         display: none;
     }

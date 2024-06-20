@@ -1,11 +1,13 @@
 import React from 'react'
 import "./navbar.css"
+import { Link } from 'react-router-dom'
 import { Search } from "../Search/Search"
 export const Navbar = () => {
   return (
     <div id='navbar'>
-        <h1 className='logo-name'>HoneyFlix</h1>
-
+        <Link to="/">
+          <h1 className='logo-name'>HoneyFlix</h1>
+        </Link>
         <ul className='navbar-ul'>
             <li><a href="">Series</a></li>
             <li><a href="">Movies</a></li>
