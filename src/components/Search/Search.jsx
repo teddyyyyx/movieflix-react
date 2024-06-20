@@ -3,20 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import { MovieContext } from '../../context/MovieContext'
 import './search.css'
 export const Search = () => {
-    const {searchTerm, setSearchTerm, searchMovies, setCurrentSearch} = useContext(MovieContext);
+    const {searchTerm, setSearchTerm, searchMovies, setCurrentSearch, handleSearch} = useContext(MovieContext);
 
-    const navigate = useNavigate();
-
-    const handleSearch = () => {
-        if (searchTerm.trim() === "") {
-            navigate('/');
-        } else {
-            searchMovies(searchTerm);
-            setCurrentSearch(searchTerm);
-            navigate('/');
-        }
-      
-    };
   return (
         <div className="search">
             <input
