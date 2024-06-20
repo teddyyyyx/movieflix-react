@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { MovieContext } from '../../context/MovieContext'
 import './search.css'
 export const Search = () => {
-    const {searchTerm, setSearchTerm, searchMovies, setCurrentSearch, handleSearch} = useContext(MovieContext);
+    const {searchTerm, setSearchTerm, handleSearch} = useContext(MovieContext);
 
   return (
         <div className="search">
