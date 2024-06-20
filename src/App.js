@@ -3,7 +3,7 @@ import "./App.css";
 import { Movie } from "./components/Movie/Movie";
 import MovieDetails from "./components/MovieDetails/MovieDetails";
 import { Navbar } from "./components/Navbar/Navbar";
-import { BrowserRouter as Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
 
 const App = () => {
