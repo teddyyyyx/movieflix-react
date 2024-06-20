@@ -14,6 +14,18 @@ const MovieProvider = ({ children }) => {
         const data = await response.json();
         setMovies(data.Search);
     }
+    const navigate = useNavigate();
+
+    const handleSearch = () => {
+        if (searchTerm.trim() === "") {
+            navigate('/');
+        } else {
+            searchMovies(searchTerm);
+            setCurrentSearch(searchTerm);
+            navigate('/');
+        }
+      
+    };
 
     useEffect(() => {
         searchMovies("avengers");
@@ -25,7 +37,7 @@ const MovieProvider = ({ children }) => {
         setMovieDetails(data);
     }
 
-    const contextValue = { movies, searchTerm, setSearchTerm, searchMovies, currentSearch, setCurrentSearch, movieDetails, fetchMovieDetails};
+    const contextValue = { movies, searchTerm, setSearchTerm, searchMovies, currentSearch, setCurrentSearch, movieDetails, fetchMovieDetails, handleSearch};
 
     return (
         <MovieContext.Provider value={contextValue}>
