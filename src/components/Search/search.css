@@ -1,28 +1,36 @@
 
 .search {
-  width: clamp(10rem, 20vw, 50rem);
+  width: clamp(12rem, 30vw, 30rem);
   border: 1px solid white;
   border-radius: 2rem;
   display: flex;
   align-items: center;
-  padding: 0 5%;
+  padding: 5px 5%;
   gap: .2rem ;
+  background-color: #3f4153;
+
   }
   
   .search input {
     border: none;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1vw, 1.2rem);
     font-family: var(--font-raleway);
     font-weight: 500;
     border: none;
-    background-color: unset;
     outline: none;
     color: white;
+    background-color: unset;
     width: 95%;
   }
 
   .search-icon{
-    width: 40px;
+    width: clamp(35px, 5vw, 40px);
     cursor: pointer;
+    padding: 0;
   } 
  
+@media screen and (max-width: 360px) {
+  .search{
+    width: 48vw;
+  }
+}
